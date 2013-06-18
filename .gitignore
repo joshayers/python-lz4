@@ -1,0 +1,6 @@
+build/
+
+*.pyc
+lz4/*.c
+lz4/*.so
+lz4/*.pyd

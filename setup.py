@@ -24,6 +24,13 @@ def main():
                   extra_link_args=[],
                   extra_compile_args=['-mssse3', '-std=c99']),
 
+        Extension("lz4.shuffle",
+                  sources=["lz4/shuffle.pyx"],
+                  include_dirs=[np.get_include()],
+                  define_macros=[],
+                  extra_link_args=[],
+                  extra_compile_args=['-mssse3', '-std=c99']),
+
                   ]
 
     kwargs = dict(
